@@ -23,7 +23,7 @@ BONUS_OBJ_FILES = $(BONUS_SRC_FILES:.c=.o)
 
 REMOVE = rm -f
 CC = clang
-CFLAGS = -Wall -Werror -Wextra -I$(INC_DIR) -I$(BONUS_DIR) -I$(LIBFT_DIR)
+CFLAGS = -Wall -Werror -Wextra -Wno-unused-result -I$(INC_DIR) -I$(BONUS_DIR) -I$(LIBFT_DIR)
 
 all: $(NAME)
 
